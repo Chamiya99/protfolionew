@@ -1,0 +1,176 @@
+.sk-container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+.sub-title{
+    align-self: center;
+    justify-self: center; 
+    padding-bottom: 70px;  
+}
+
+.sub-title span:nth-of-type(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.sub-title span:nth-of-type(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.sub-container{
+ 
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.technical-bars .bar{
+    margin: 40px 0;
+
+}
+.bar{
+   font-size: 23px;
+
+}
+
+.technical-bars .bar:nth-child(1){
+    margin-top: 0px;
+}
+
+.technical-bars .bar:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 100;
+}
+
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100%{transform: scaleX(1)}
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color:#9d00ff;
+    position: absolute;
+    border-radius: 10px;
+    animation:  animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 60%;
+}
+.progress-line.js span{
+    width: 75%;
+}
+.progress-line.react span{
+    width: 75%;
+}
+.progress-line.android span{
+    width: 80%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+
+}
+
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "60%";
+}
+.progress-line.js span::after{
+    content: "75%";
+}
+.progress-line.react span::after{
+    content: "75%";
+}
+.progress-line.android span::after{
+    content: "80%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}   
+
+@keyframes showText {
+   100% {opacity: 1;}
+}
+
+@media screen and (max-width: 480px){
+    .sk-container{
+      width: 80%; 
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+    }
+
+    .sub-container{
+        position: relative;
+        width: 80%; 
+        margin-left: 1rem;
+        top: -1rem;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+
+}
