@@ -3,11 +3,17 @@
     display: flex;
     height: 80vh;
     margin-top: 4rem;
+    gap: 5rem;
 }
-
+.w-left{
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    flex: 1;
+}
 .c-right{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     position: relative;
     flex: 1;
 }
@@ -41,11 +47,19 @@ textarea{
 @media screen and (max-width : 480px){
     .contact-form{
         flex-direction: column;
-        height: 55rem;
+        height: 40rem;
         padding: 0;
-        gap: 5px;
+        gap: 10px;
+        margin: 0;
+        margin-bottom: 10rem;
+        margin-left: 2rem;
     } 
 
+    .w-left{
+        display: flex;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
     .c-right{
       display: flex;  
       align-items: start;
