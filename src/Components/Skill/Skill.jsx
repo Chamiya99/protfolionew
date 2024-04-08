@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skill.css";
-import { useRef } from 'react';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 import HTML5Ico from "@iconscout/react-unicons/icons/uil-html5";

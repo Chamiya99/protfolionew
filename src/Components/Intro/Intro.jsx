@@ -5,8 +5,6 @@ import LinkedIn from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import boy from '../../img/boy.png'
-import boy1 from '../../img/boy1.png'
 import boy5 from '../../img/boy5.png'
 import thubsup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
@@ -33,13 +31,13 @@ function Intro() {
 
         <button className="button i-button">Hire me</button>
         <div className="i-icons">
-            <a href="#">
+            <a href="https://github.com/Chamiya99">
             <img src={Github} alt="" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/chamika-heshan-4b8b95280">
             <img src={LinkedIn} alt="" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/c_h_a_m_i_y_a_99/">
             <img src={Instagram} alt="" />
             </a>
         </div>

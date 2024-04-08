@@ -62,8 +62,8 @@ textarea{
     }
     .c-right{
       display: flex;  
-      align-items: start;
-      justify-content: start;
+      align-items: flex-start;
+      justify-content: flex-start;
       transform: scale(0.8);
       left: -1.5rem;
     }

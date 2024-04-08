@@ -1,8 +1,6 @@
 import React from 'react'
 import './Protfolio.css'
 import {Swiper , SwiperSlide } from 'swiper/react'
-import Sidebar from "../../img/sidebar.png"
-import Ecommerce from "../../img/ecommerce.png"
 import IMG1 from "../../img/imgs.png"
 import IMG2 from "../../img/imgs2.png"
 import 'swiper/css'
