@@ -92,7 +92,7 @@ const Skill = () => {
                         <div className="info">
                             <span>MS Server 2016 2019</span>
                         </div>
-                        <div className="progress-line html">
+                        <div className="progress-line Server">
                         <span></span>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ const Skill = () => {
                         <div className="info">
                             <span>AD DC DNS DHCP</span>
                         </div>
-                        <div className="progress-line css">
+                        <div className="progress-line ADDC">
                         <span></span>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ const Skill = () => {
                         <div className="info">
                             <span>Database</span>
                         </div>
-                        <div className="progress-line js">
+                        <div className="progress-line DB">
                         <span></span>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Skill = () => {
                         <div className="info">
                             <span>Networking</span>
                         </div>
-                        <div className="progress-line react">
+                        <div className="progress-line Net">
                         <span></span>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ const Skill = () => {
                         <div className="info">
                             <span>MS Office Package</span>
                         </div>
-                        <div className="progress-line android">
+                        <div className="progress-line Office">
                         <span></span>
                         </div>
                     </div>

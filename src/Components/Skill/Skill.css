@@ -119,6 +119,26 @@
 .progress-line.android span{
     width: 80%;
 }
+.progress-line.Server span{
+    width: 80%;
+}
+.progress-line.ADDC span{
+    width: 80%;
+}
+
+.progress-line.DB span{
+    width: 70%;
+}
+.progress-line.Net span{
+    width: 75%;
+}
+.progress-line.Office span{
+    width: 90%;
+}
+
+
+
+
 
 .progress-line span::after{
     position: absolute;
@@ -149,6 +169,24 @@
 .progress-line.android span::after{
     content: "80%";
 }
+
+.progress-line.Server span::after{
+    content: "80%";
+}
+.progress-line.ADDC span::after{
+    content: "80%";
+}
+.progress-line.DB span::after{
+    content: "70%";
+}
+.progress-line.Net span::after{
+    content: "75%";
+}
+.progress-line.Office span::after{
+    content: "90%";
+}
+
+
 
 .progress-line span::before{
     content: "";
