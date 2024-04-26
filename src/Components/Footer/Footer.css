@@ -29,5 +29,17 @@
     .f-content{
         flex-direction: column;
         align-items: center;
+        margin-top: 12rem;
+        gap: 1.5rem;
     }
+
+    .f-icons{
+        width: 8rem;
+    
+    }
+
+    .f-content span{
+        font-size: small;
+    }
+
   }

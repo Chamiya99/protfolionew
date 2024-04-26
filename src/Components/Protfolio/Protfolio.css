@@ -29,6 +29,7 @@
 
 .portfolio-slider .swiper-slide{
     width: 20rem;
+    cursor: pointer;
 }
 
 .portfolio img{
