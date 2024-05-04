@@ -24,7 +24,7 @@ function Intro() {
     <div className="intro">
         <div className="i-left">
         <div className="i-name">
-            <span style={{color:darkmode? 'white': ''}}>Hy! I Am</span>
+            <span style={{color:darkmode? 'white': ''}}>Hi! I Am</span>
             <span>Chamika Heshan</span>
             <span>Frontend Devoloper | Android Devoloper | Video Editor </span>
         </div>

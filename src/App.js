@@ -1,14 +1,10 @@
-import Navbar from "./Components/Navbar/Navbar";
 import "./App.css"
-import Intro from "./Components/Intro/Intro";
-import Services from "./Components/Services/Services";
-import Experience from "./Components/Experience/Experience";
-import Protfolio from "./Components/Protfolio/Protfolio";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
 import { themeContext } from "./Context";
 import { useContext } from "react";
-import Skill from "./Components/Skill/Skill";
+import Landing from "./Pages/Landing/Landing";
+import { Route,Routes,BrowserRouter } from "react-router-dom";
+import Projects from "./Pages/Projects/Projects";
+import Servicedata from "./Pages/Servicedata/Servicedata";
 
 function App() {
   const theme = useContext(themeContext);
@@ -18,14 +14,13 @@ function App() {
     style={{background: darkmode? 'black': '',
     color : darkmode? 'white': ''}}
     >
-      <Navbar/>
-      <Intro/>
-      <Services/>
-      <Skill/>
-      <Experience/>
-      <Protfolio/>
-      <Contact/>
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing/>}/>
+          <Route path="/Service" element={<Servicedata/>}/>
+          <Route path="/Projects" element={<Projects/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
