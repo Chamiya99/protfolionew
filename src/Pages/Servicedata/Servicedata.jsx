@@ -5,7 +5,7 @@ import img1 from "../../img/ServicesDataImg/1.webp";
 import img2 from "../../img/ServicesDataImg/2.jpg";
 import img3 from "../../img/ServicesDataImg/3.jpg";
 import img4 from "../../img/ServicesDataImg/4.jpg";
-import { ServicesData } from "../../Data/ServicesData";
+
 
 const Servicedata = () => {
   return (
