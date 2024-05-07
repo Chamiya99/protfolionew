@@ -7,7 +7,7 @@ import img4 from '../img/ServicesDataImg/4.jpg'
 
 export const ServicesData =[
     {
-        id:1,
+        id:'SId1',
         title:'Design',
         img1:img1,
         img2:img2,
@@ -15,20 +15,20 @@ export const ServicesData =[
         img4:img4,
     },
     {
-        id:2,
+        id:'SId2',
         title:'Developper',
         img1:img1,
-        img2:img2,
-        img3:img3,
-        img4:img4,
+        img2:img3,
+        img3:img4,
+        img4:img2,
     },
     {
-        id:3,
+        id:'SId3',
         title:'Videography',
-        img1:img1,
+        img1:img4,
         img2:img2,
-        img3:img3,
-        img4:img4,
+        img3:img1,
+        img4:img3,
     },
     
 

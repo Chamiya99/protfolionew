@@ -4,7 +4,7 @@ import HeartEmoji from "../../img/heartemoji.png"
 import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
 import Card from '../Card/Card'
-import TT from './TT.pdf'
+import CV from './Chamika_Heshan_Resume.pdf'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 import {motion} from 'framer-motion'
@@ -20,7 +20,7 @@ const Services = () => {
         <span style={{color:darkmode? 'white': ''}}>My Awesome</span>
         <span>Services</span>
         <span>You can see my services.Also refer my Resume down below.<br/> discribe the services</span>
-        <a href={TT} download>
+        <a href={CV} download>
         <button className="button s-button">Download CV</button>  
         </a>
         <div className="blur s-blur1" style={{background:"#ABF1FF94"}}></div>
@@ -36,6 +36,7 @@ const Services = () => {
                 emoji = {HeartEmoji}
                 heading = {'Design'}
                 detail = {"Figma ,Sketch ,Photoshop, Lightroom, Adobe xd "}
+                id = {'SId1'}
                 />
               </motion.div>
               <motion.div
@@ -47,6 +48,7 @@ const Services = () => {
                 emoji = {Glasses}
                 heading = {'Devoloper'}
                 detail = {"Html, CSS, JavaScript, React , Android Studio"}
+                id = {'SId2'}
                 />
               </motion.div>
               <motion.div 
@@ -58,6 +60,7 @@ const Services = () => {
                 emoji = {Humble}
                 heading = {'Videography'}
                 detail = {"Adobe Premiere Pro ,Adobe After Effect"}
+                id = {'SId3'}
                 />
               </motion.div>
               <div className="blur s-blur2" style={{background:"var(--purple)"}}></div>

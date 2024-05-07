@@ -1,13 +1,18 @@
 import React from "react";
 import "./Servicedata.css";
 import Backicon from "@iconscout/react-unicons/icons/uil-angle-left";
-import img1 from "../../img/ServicesDataImg/1.webp";
-import img2 from "../../img/ServicesDataImg/2.jpg";
-import img3 from "../../img/ServicesDataImg/3.jpg";
-import img4 from "../../img/ServicesDataImg/4.jpg";
-
+import {ServicesData} from '../../Data/ServicesData';
+import { useParams } from "react-router-dom";
 
 const Servicedata = () => {
+
+   const {id} = useParams();
+   console.log(id);
+   const service = ServicesData.find(service => service.id === id);
+
+   if (!service) {
+    return <div>Service not found</div>;
+  }
   return (
     <div className="s-data">
       <div className="back">
@@ -18,18 +23,18 @@ const Servicedata = () => {
           </button>
         </a>
       </div>
-      <div className="services-data">
-        <div className="s-title">
-          <span>Design</span>
-          <span> Samples</span>
-        </div>
-        <div className="img-grid">
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-          <img src={img4} alt="" />
-        </div>
-      </div>
+          <div className="services-data">
+            <div className="s-title">
+              <span>{service.title}</span>
+              <span> Samples</span>
+            </div>
+            <div className="img-grid">
+              <img src={service.img1} alt="" />
+              <img src={service.img2} alt="" />
+              <img src={service.img3} alt="" />
+              <img src={service.img4} alt="" />
+            </div>
+          </div>  
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.p-data{
+    display: flex;
+    margin: 1rem 0;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.back>a{
+    text-decoration: none;
+}
+.back>a>button{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    background: transparent;
+    
+}
+
+.back>a>:hover{
+    color: var(--orange);
+}

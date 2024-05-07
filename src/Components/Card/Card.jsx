@@ -1,13 +1,16 @@
 import React from 'react'
 import './Card.css'
+import { Link } from 'react-router-dom'
 
-const Card = ({emoji ,heading , detail}) => {
+const Card = ({id,emoji ,heading , detail}) => {
   return (
     <div className="card">
         <img src={emoji} alt="" />
         <span>{heading}</span>
         <span>{detail}</span>
-        <button className="c-button">LEARN MORE</button>
+        <Link to={`/service/${id}`}>
+          <button className="c-button">LEARN MORE</button>
+        </Link>
     </div>
   )
 }
