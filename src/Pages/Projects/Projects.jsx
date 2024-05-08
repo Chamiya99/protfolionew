@@ -1,7 +1,6 @@
 import React from 'react'
 import './Projects.css'
 import Backicon from "@iconscout/react-unicons/icons/uil-angle-left";
-import img1 from '../../img/ServicesDataImg/1.webp'
 import LinkedInICO from '@iconscout/react-unicons/icons/uil-linkedin';
 import DownICO from '@iconscout/react-unicons/icons/uil-file-download'
 import GitICO from '@iconscout/react-unicons/icons/uil-github'
