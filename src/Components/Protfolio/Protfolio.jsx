@@ -6,6 +6,7 @@ import IMG2 from "../../img/imgs2.png"
 import 'swiper/css'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom'
 
 const Protfolio = () => {
     const theme = useContext(themeContext);
@@ -24,10 +25,16 @@ const Protfolio = () => {
         className='portfolio-slider'
         >
             <SwiperSlide className='swiper-slide'> 
-                <img src={IMG1} alt="" />
+                <Link to={'/Projects/WeatherStation'}>
+                    <img src={IMG1} alt="" />
+                </Link>
+                <span style={{color:darkmode? 'white': ''}}>Weather Station</span>
             </SwiperSlide>
             <SwiperSlide className='swiper-slide'>
-                <img src={IMG2} alt="" />
+                <Link to={'/Projects/Restaurant'}>
+                    <img src={IMG2} alt="" />
+                </Link>
+                <span style={{color:darkmode? 'white': ''}}>Restaurant Mobile App </span>
             </SwiperSlide>
         </Swiper>
     </div>

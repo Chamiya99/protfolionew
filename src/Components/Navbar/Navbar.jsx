@@ -15,16 +15,16 @@ function Navbar() {
             <div className="n-list">
                 <ul style={{listStyleType:'none'}}>
                     <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
-                        <li>Home</li>
+                        <li className='links'>Home</li>
                     </Link>
                     <Link spy={true} to='Services' smooth={true} >
-                        <li>Services</li>
+                        <li className='links'>Services</li>
                     </Link>
                     <Link spy={true} to='sk-skills' smooth={true} >
-                        <li>Experience</li>
+                        <li className='links'>Experience</li>
                     </Link>
                     <Link spy={true} to='Protfolio' smooth={true} >
-                        <li>protfolio</li>
+                        <li className='links'>protfolio</li>
                     </Link>
                 </ul>
             </div>

@@ -55,6 +55,11 @@
     object-fit: cover;
 }
 
+.img-grid>img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .img-grid>:nth-child(1){
     width: 50rem;
     grid-row: 1/3;
