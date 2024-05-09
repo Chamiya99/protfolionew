@@ -1,6 +1,7 @@
-import img1 from '../img/ServicesDataImg/1.webp'
-import img2 from '../img/ServicesDataImg/2.jpg'
-import report1 from './file.pdf'
+import ESProject from '../img/ProjectDataImg/ESProject.png'
+import AndApp from '../img/ProjectDataImg/AndApp.png'
+import RestReport from './Rest_App.pptx'
+import weatherReport from './WeatherStation_ProjectReport.pdf'
 
 
 
@@ -9,20 +10,18 @@ export const ProjectsData = [
     {
         ID : 'WeatherStation',
         Title: 'Simple Weather Station',
-        image1 : img1,
-        image2 : img2,
-        Description: 'This is sample test For test Data.It is test test test . And Check Check Check check.This is sample test For test Data.It is test test test . And Check Check Check check.',
+        image1 : ESProject,
+        Description: 'This system leverages the Internet of Things (IoT) to revolutionize weather monitoring. By seamlessly integrating sensors, data analytics, and real-time communication, this solution provides a comprehensive and accurate overview of environmental conditions. Stay ahead of the weather with a smart, interconnected solution that transforms how we understand and respond to atmospheric changes. ',
         LinkGit:'https://github.com/Chamiya99/protfolionew.git',
         LinkLinkedIn : 'https://github.com/Chamiya99/protfolionew.git',
-        Report : report1,
+        Report : weatherReport,
     },
     {
         ID : 'Restaurant',
         Title: 'LEMON Restaurant Mobile App',
-        image1 : img2,
-        Description: 'This is sample test For test Data.It is test test test . And Check Check Check check.This is sample test For test Data.It is test test test . And Check Check Check check.',
+        image1 : AndApp,
+        Description: 'LEMON is simple android app which shows foods and beverages in restaurent.Also It can show the restaurent location. ',
         LinkGit:'https://github.com/Chamiya99/protfolionew.git',
-        LinkLinkedIn : 'https://github.com/Chamiya99/protfolionew.git',
-        Report : report1,
+        Report : RestReport,
     },
 ]

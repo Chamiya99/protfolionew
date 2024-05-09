@@ -55,24 +55,9 @@
     .portfolio{
         display: flex;
         flex-direction: column  ;
+        margin-top: 15rem;
     }
 
-    .swiper-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio-slider .swiper-slide{
-        width: auto;
-    }
-
-    .portfolio-slider{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio img{
-        width: 10rem;
-    }
-}
+   
+    
+}   

@@ -41,18 +41,6 @@
     box-shadow: var(--boxShadow);
 }
 
-.circle::after{
-    border-radius: 100%;
-    content: '';
-    background-image: linear-gradient(to right top, #ffb33e, #ff8f59, #ff6d88, #ff5ec0, #de6ef6);
-    top: -8px;
-    left: -8px;
-    bottom: -8px;
-    right: -8px;
-    position: absolute;
-    z-index: -1;
-    box-shadow: var(--boxShadow);
-}
 
 .achievement span{
     font-size: 1.5rem;
@@ -63,7 +51,7 @@
 
 @media screen and  (max-width: 480px) {
     .experience{
-        margin-top: 40rem;
+        margin-top: 35rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;

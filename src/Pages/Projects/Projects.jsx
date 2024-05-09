@@ -13,6 +13,10 @@ const Projects = () => {
   console.log(id);
   const project = ProjectsData.find(project => project.ID === id);
 
+  if (!project) {
+    return <div>Service not found</div>;
+  }
+
   return (
     <div className="p-data">
       <div className="back">
@@ -31,29 +35,35 @@ const Projects = () => {
         <div className="p-desc">
           <div className="p-desc-left">
             <img src={project.image1} alt="" />
-            <img src={project.image2} alt="" />
+            
           </div>
           <div className="p-desc-right">
             <span>{project.Description}</span>
             <div className="p-desc-right-links">
-              <a href={project.Report} >
-                <div className="outline-btn">
-                    <DownICO/>
+              {project.Report && (
+                <a href={project.Report}>
+                  <div className="outline-btn">
+                    <DownICO />
                     <span>Project Report</span>
-                </div>
-              </a>
-              <a href={project.LinkLinkedIn} >
-                <div className="outline-btn">
-                    <LinkedInICO/>
+                  </div>
+                </a>
+              )}
+              {project.LinkLinkedIn && (
+                <a href={project.LinkLinkedIn}>
+                  <div className="outline-btn">
+                    <LinkedInICO />
                     <span>LinkedIn</span>
-                </div>
-              </a>
-              <a href={project.LinkGit} >
-                <div className="outline-btn">
-                    <GitICO/>
+                  </div>
+                </a>
+              )}
+              {project.LinkGit && (
+                <a href={project.LinkGit}>
+                  <div className="outline-btn">
+                    <GitICO />
                     <span>GitHub</span>
-                </div>
-              </a>
+                  </div>
+                </a>
+              )}
             </div>
           </div>
         </div>
