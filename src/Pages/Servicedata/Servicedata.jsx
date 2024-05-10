@@ -3,8 +3,12 @@ import "./Servicedata.css";
 import Backicon from "@iconscout/react-unicons/icons/uil-angle-left";
 import {ServicesData} from '../../Data/ServicesData';
 import { useParams } from "react-router-dom";
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Servicedata = () => {
+    const theme = useContext(themeContext);
+    const darkmode = theme.state.darkMode;
 
    const {id} = useParams();
    console.log(id);
@@ -17,7 +21,7 @@ const Servicedata = () => {
     <div className="s-data">
       <div className="back">
         <a href="/">
-          <button>
+          <button style={{color:darkmode? 'white':''}}>
             <Backicon />
             <span>Back</span>
           </button>

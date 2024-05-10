@@ -8,7 +8,9 @@ const Card = ({id,emoji ,heading , detail}) => {
         <img src={emoji} alt="" />
         <span>{heading}</span>
         <span>{detail}</span>
-        <Link to={`/service/${id}`}>
+
+        {/** After Add data insert it to link to `/service/${id}`*/}
+        <Link to='#'>
           <button className="c-button">LEARN MORE</button>
         </Link>
     </div>

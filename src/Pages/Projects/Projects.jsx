@@ -1,14 +1,20 @@
 import React from 'react'
 import './Projects.css'
 import Backicon from "@iconscout/react-unicons/icons/uil-angle-left";
-import LinkedInICO from '@iconscout/react-unicons/icons/uil-linkedin';
 import DownICO from '@iconscout/react-unicons/icons/uil-file-download'
 import GitICO from '@iconscout/react-unicons/icons/uil-github'
+import YTICO from '@iconscout/react-unicons/icons/uil-youtube'
 import { useParams } from 'react-router-dom';
 import { ProjectsData } from '../../Data/ProjectsData';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 
 const Projects = () => {
+
+  const theme = useContext(themeContext);
+  const darkmode = theme.state.darkMode; 
+
   const {id} = useParams();
   console.log(id);
   const project = ProjectsData.find(project => project.ID === id);
@@ -17,11 +23,12 @@ const Projects = () => {
     return <div>Service not found</div>;
   }
 
+  
   return (
     <div className="p-data">
       <div className="back">
         <a href="/">
-          <button>
+          <button style={{color:darkmode? 'white':''}}>
             <Backicon />
             <span>Back</span>
           </button>
@@ -48,19 +55,19 @@ const Projects = () => {
                   </div>
                 </a>
               )}
-              {project.LinkLinkedIn && (
-                <a href={project.LinkLinkedIn}>
-                  <div className="outline-btn">
-                    <LinkedInICO />
-                    <span>LinkedIn</span>
-                  </div>
-                </a>
-              )}
               {project.LinkGit && (
                 <a href={project.LinkGit}>
                   <div className="outline-btn">
                     <GitICO />
-                    <span>GitHub</span>
+                    <span>Git Repositorie</span>
+                  </div>
+                </a>
+              )}
+              {project.Video && (
+                <a href={project.Video}>
+                  <div className="outline-btn">
+                    <YTICO/>
+                    <span>Demo Video</span>
                   </div>
                 </a>
               )}
